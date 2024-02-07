@@ -1,0 +1,41 @@
+<h3>Cadastro de Produtos</h3>
+<p>Preencha os campos para incluir um produto</p>
+<hr/>
+
+<form>
+
+  <div class="row mb-2">
+    <div class="col-md-6">
+      <label>Nome do produto:</label>
+      <input type="text" class="form-control" placeholder="Digite o nome aqui"/>
+    </div>
+    <div class="col-md-3">
+      <label>Preço do produto:</label>
+      <input type="text" class="form-control" placeholder="Digite o preço aqui"/>
+    </div>
+    <div class="col-md-3">
+      <label>Quantidade do produto:</label>
+      <input type="number" class="form-control" placeholder="Digite a quantidade aqui"/>
+    </div>
+
+    <div class="row mb-2">
+      <div class="col-md-12">
+        <label>Descrição do produto:</label>
+        <textarea class="form-control"></textarea>
+      </div>
+    </div>
+
+    <div class="row mb-2">
+      <div class="col-md-12">
+        <input type="submit" class="btn btn-success" value="Realizar Cadastro">
+        <a [routerLink]="['/pages/consulta-produtos']" class="btn btn-secondary ms-2">
+          Ir para a consulta
+        </a>
+      </div>
+    </div>
+  </div>
+
+
+
+</form>
+
